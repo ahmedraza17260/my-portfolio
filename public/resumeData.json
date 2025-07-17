@@ -1,0 +1,193 @@
+{
+  "main": {
+    "name": "Ahmed Raza",
+    "occupation": "Process Controller",
+    "description": "Focused on enhancing product quality and ensuring process control in the textile sector.",
+    "image": "Ahmed_Raza.jpg",
+    "bio": "I am Ahmed Raza, a highly motivated professional with 2+ years of experience in process control, dyeing planning, and production costing within the textile industry. I aim to enhance operational efficiency, reduce rework, and promote continuous improvement in manufacturing processes.",
+    "contactmessage": "Feel free to get in touch for professional inquiries, collaboration, or mentorship.",
+    "email": "ahmedraza17260@gmail.com",
+    "phone": "+92 3232190116",
+    "address": {
+      "street": "FB Area Block 14",
+      "city": "Karachi",
+      "state": "Sindh",
+      "zip": "75950"
+    },
+    "website": "https://ahmedrazaportfolio.netlify.app/",
+    "resumedownload": "https://drive.google.com/file/d/1V_H6p9DV_7EwtQ26MTz7pFTJBeNoRRsR/view",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/ahmedraza1726",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ahmedraza17260/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/ahmedraza17260/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "pinterest",
+        "url": "https://pinterest.com/ahmedraza17260/",
+        "className": "fa fa-pinterest"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/AhmedRaza17260",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/ahmedraza17260",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "A diverse skillset ranging from quality control to frontend development and design.",
+    "education": [
+      {
+        "school": "Academy of Islamic and Modern Studies 2003-2015",
+        "college": "Sir Adamjee Institute 2015-2017",
+        "university": "University of Karachi 2019-2022",
+        "degree": "BSc. (Hons) Applied Chemistry 2019-2021",
+        "degree1": "MSc. (Hons) Applied Chemistry 2021-2022",
+        "description": "Strong foundation in analytical and industrial chemistry with hands-on lab training."
+      }
+    ],
+    "work": [
+      {
+        "company": "Ayaan Corporation",
+        "title": "Sales Supervisor",
+        "years": "June 2017 - October 2018",
+        "description": "Worked closely with management to achieve sales targets, analyze sales data, manage accounts, and create reports."
+      },
+      {
+        "company": "Dalda Foods",
+        "title": "Intern - Quality Department",
+        "years": "January 2023 - March 2023 (6 Weeks",
+        "description": "Performed quality tests (FFA, Soap Content, M&I, SMP, FAME, POV, Citric Acid) on edible oil products, ensuring adherence to food safety standards. Conducted Line and Packaging Quality Departure Inspections. Collaborated with QA team to document findings."
+      },
+      {
+        "company": "Global Exports",
+        "title": "MTO - Quality Control",
+        "years": "26th May 2023 - 31 Dec 2024",
+        "description": "Optimized dyeing performance by analyzing real-time data. Conducted quality control tests (Formic Acid, Acetic Acid, Caustic Soda purity; absorbency and solid content analysis), ensuring 100% compliance with industry standards."
+      },
+      {
+        "company": "Global Exports",
+        "title": "Assistant Manager - Processing",
+        "years": "Jan 2025 - Present",
+        "description": "Managed production costing for dyeing operations. Planned and scheduled dyeing operations, ensuring on-time delivery. Created comprehensive production performance reports."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Quality Control",
+        "level": "80%"
+      },
+      {
+        "name": "Analytical Skills",
+        "level": "85%"
+      },
+      {
+        "name": "Microsoft Office",
+        "level": "90%"
+      },
+      {
+        "name": "Laboratory Techniques",
+        "level": "81%"
+      },
+      {
+        "name": "Graphic Design",
+        "level": "63%"
+      },
+      {
+        "name": "Frontend Development",
+        "level": "55%"
+      },
+      {
+        "name": "CSS3",
+        "level": "70%"
+      },
+      {
+        "name": "Git",
+        "level": "62%"
+      },
+      {
+        "name": "HTML5",
+        "level": "85%"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "82%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Second Portfolio",
+        "category": "Personal Portfolio built using React.js",
+        "image": "portfolio.jpg",
+        "url": "https://ahmedrazaportfolio.netlify.app/"
+      },
+      {
+        "title": "Amazon Clone",
+        "category": "E-commerce interface clone built with React.js",
+        "image": "amazon-clone.jpg",
+        "url": "https://clone-76219.web.app/"
+      },
+      {
+        "title": "LinkedIn Clone",
+        "category": "LinkedIn UI clone with React & Redux",
+        "image": "linkedin-clone.jpg",
+        "url": "https://linkedin-clone-874a2.web.app/"
+      },
+      {
+        "title": "Ahmed Raza Electronics",
+        "category": "Electronics store prototype with React.js",
+        "image": "ahmed-raza-electronics.jpg",
+        "url": "https://ahmedrazaelectronics-17.web.app/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Ahmed has consistently demonstrated strong analytical skills and attention to detail in quality control processes.",
+        "user": "Supervisor, Quality Assurance Department – Global"
+      },
+      {
+        "text": "His contribution to dyeing planning helped optimize resource allocation and improve on-time delivery rates.",
+        "user": "Manager, Dyeing Operations – Global"
+      },
+      {
+        "text": "He proactively identified process gaps and suggested lean improvements that saved time and reduced waste.",
+        "user": "Operational Excellence Team – Global"
+      },
+      {
+        "text": "Ahmed’s skills in Excel dashboards enhanced data visibility and helped streamline decision-making in production meetings.",
+        "user": "Data & Planning Team – Global"
+      },
+      {
+        "text": "His commitment to continuous improvement and learning new tools made him a valuable member of our process control team.",
+        "user": "Process Control Unit – Global"
+      },
+      {
+        "text": "Ahmed consistently delivers quality work and is very detail-oriented.",
+        "user": "Colleague, Dalda Foods"
+      },
+      {
+        "text": "His skills in both QA and frontend development make him a valuable asset.",
+        "user": "Team Lead, Ayaan Corporation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,453 @@
+
+/* 1. Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* @import "~slick-carousel/slick/slick.css"; */
+/* @import "~slick-carousel/slick/slick-theme.css"; */
+
+/* 2. Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* 3. Light Theme */
+body.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --icon-color: #000000;
+  --nav-bg: #f0f0f0;
+  --nav-text: #000000;
+  --nav-hover: #d0d0d0;
+  --highlight: #25d366;
+  --footer-bg: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  --footer-color: #000000;
+}
+
+/* 4. Dark Theme */
+body.dark-theme {
+  /* --bg-color: #111111; */
+  --text-color: #ffffff;
+  --icon-color: #ffffff;
+  --nav-bg: #000000;
+  --nav-text: #ffffff;
+  --nav-hover: #333333;
+  --highlight: #25d366;
+  --footer-bg: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+  --footer-color: #ffffff;
+  --bg-color: rgb(31, 40, 51)
+}
+
+/* 5. Apply Theme Variables */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* 6. Navigation Bar */
+.navigation {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  background: var(--nav-bg);
+  color: var(--text-color);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  align-content: center;
+}
+
+.navigation ul {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--nav-text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  text-align: center;  
+}
+
+.navigation ul li a .icon {
+  font-size: 1.5em;
+  line-height: 75px;
+  transition: 0.3s;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  font-style: 1.5em;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.navigation ul li a .text {
+  font-size: 0.75em;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.navigation ul li:hover a .icon {
+  transform: translateY(-20px);
+  background: #c0c0c0;
+  top: -20%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid var(--clr);
+  transition: 0.5s;
+}
+
+.navigation ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+ion-icon {
+  font-size: 25px;
+  color: var(--nav-text);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+/* Fix toggle alignment and clickability */
+.navigation ul li.toggle-item {
+  width: auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 20px; */
+  margin: 0 auto;
+}
+
+.navigation ul li.toggle-item button {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  /* color: #fff; */
+}
+
+/* 
+body.light-mode .navigation ul li.toggle-item button {
+  color: #000;
+} */
+
+.toggle-wrapper {
+  z-index: 10;
+} */
+
+
+/* 7. WhatsApp Button */
+.whatsapp_float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--highlight);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  transition: transform 0.3s;
+}
+
+.whatsapp_float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+    width: 35px;
+    height: 35px;
+    bottom: 17px;
+    right: 17px;
+    font-size: 21px;
+  }
+
+  .whatsapp-icon {
+    margin-top: 7px;
+  }
+}
+
+/* 8. Header */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, var(--bg-color), #000); */
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-text {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.responsive-headline {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.banner-text h3 {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* 9. Social Icons */
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.social li a {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+body.dark-mode {
+  --icon-color: #ffffff;
+}
+
+body.light-mode {
+  --icon-color: #000000;
+}
+
+.social li a:hover {
+  color: var(--highlight);
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.social-links li a {
+  font-size: 1.5rem;
+  color: var(--icon-color);
+}
+
+.social-links li a:hover {
+  color: var(--highlight);
+}
+
+
+
+/* 10. Scroll Down Icon */
+.scrolldown {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.scrolldown i {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  transition: transform 0.3s;
+}
+
+.scrolldown i:hover {
+  transform: translateY(5px);
+  color: var(--highlight);
+}
+
+/* 11. Footer */
+.copyRight {
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "BioRhyme", cursive;
+  background: var(--footer-bg);
+  color: var(--footer-color);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: var(--highlight);
+}
+
+footer {
+  background: var(--clr);
+  color: var(--text-light);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul li a {
+  color: var(--text-light); /* ensures link text is visible */
+}
+
+/* 12. Responsive Typography */
+@media screen and (max-width: 768px) {
+  .responsive-headline {
+    font-size: 2.5rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .social li a {
+    font-size: 1.5rem;
+  }
+}
+
+/* 13. testimonials */
+#testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--clr);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#testimonials h1 span {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--highlight);
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+#testimonials .slides {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#testimonials .slides li {
+  margin-bottom: 40px;
+}
+
+#testimonials blockquote {
+  background-color: rgba(255, 255, 255, 0.05); /* will look light in dark mode */
+  padding: 30px 20px;
+  border-left: 4px solid var(--highlight);
+  font-style: italic;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#testimonials cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--highlight);
+}
+
+
+.testimonial-slide blockquote {
+  background-color: var(--clr);
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 150px;
+  color: var(--text-light);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.testimonial-slide cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/* 14. Skills */
+
+.skills {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.bars {
+  margin-top: 0 !important;
+  padding: 0 20px;
+}
+
+.bars i,
+.skills i {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
