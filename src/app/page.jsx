@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import "@/styles/global.css";
-import "@/App.css"; // optional: if you still want the original styles
+// import '@/styles/global.css';
+// import '../styles/global.css';
+
 
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";

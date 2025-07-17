@@ -1,7 +1,12 @@
 "use client";
 
 import React from "react";
-import "../globals.css"; // If global styles are in src/globals.css
+// import "../globals.css"; // If global styles are in src/globals.css
+
+// import "../../styles/global.css";
+
+
+
 
 const Footer = ({ data }) => {
   const networks = data?.social?.map((network) => (

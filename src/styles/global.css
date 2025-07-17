@@ -5,6 +5,12 @@
 /* @import "~slick-carousel/slick/slick.css"; */
 /* @import "~slick-carousel/slick/slick-theme.css"; */
 
+@import './fonts.css';
+@import './default.css';
+@import './layout.css';
+@import './magnific-popup.css';
+@import './media-queries.css';
+
 /* 2. Reset & Base Styles */
 * {
   margin: 0;
@@ -175,7 +181,7 @@ body.light-mode .navigation ul li.toggle-item button {
 
 .toggle-wrapper {
   z-index: 10;
-} */
+}
 
 
 /* 7. WhatsApp Button */

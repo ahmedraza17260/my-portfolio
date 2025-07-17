@@ -3,7 +3,12 @@
 
 import { useEffect, useRef } from "react";
 import DarkModeToggle from "./DarkModeToggle";
-import "@/styles/global.css"; // use alias for cleaner import
+// import '@/styles/global.css';
+
+// import "../../styles/global.css";
+
+
+
 
 const Navbar = () => {
   const navRef = useRef(null);

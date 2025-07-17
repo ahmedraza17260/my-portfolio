@@ -1,7 +1,13 @@
 "use client";
 
 import React from "react";
-import "../globals.css"; // adjust path if needed
+// import "../globals.css"; // adjust path if needed
+// import '../styles/global.css';
+
+// import "../../styles/global.css";
+
+
+
 
 const Portfolio = ({ data }) => {
   if (!data) return null;
