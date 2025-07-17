@@ -1,6 +1,10 @@
 // src/app/layout.jsx
 import '../styles/global.css'; // custom styles
 import './globals.css'; // Tailwind styles (with @tailwind base/components/utilities)
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
 
 export const metadata = {
   title: "Ahmed Raza || Portfolio",
@@ -34,13 +38,20 @@ export default function RootLayout({ children }) {
 
         {/* Font Awesome */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"></link>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossOrigin="anonymous"
+        />
 
         {/* Icons */}
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
         {/* Email.js */}
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        {/* <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -49,10 +60,10 @@ export default function RootLayout({ children }) {
               })();
             `,
           }}
-        />
+        /> */}
 
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBMW4X08JQ"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBMW4X08JQ"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -62,10 +73,10 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-ZBMW4X08JQ');
             `,
           }}
-        />
+        /> */}
 
         {/* Google Tag Manager */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -75,14 +86,14 @@ export default function RootLayout({ children }) {
               })(window,document,'script','dataLayer','GTM-TDPRVM2');
             `,
           }}
-        />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9004285372762378" crossOrigin="anonymous"></script>
+        /> */}
+        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9004285372762378" crossOrigin="anonymous"></script> */}
       </head>
       <body>
         {/* Google Tag Manager NoScript Fallback */}
-        <noscript>
+        {/* <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDPRVM2" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
-        </noscript>
+        </noscript> */}
 
         {children}
       </body>

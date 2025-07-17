@@ -6,8 +6,7 @@ import DarkModeToggle from "./DarkModeToggle";
 // import '@/styles/global.css';
 
 // import "../../styles/global.css";
-
-
+import ClientOnly from "./ClientOnly";
 
 
 const Navbar = () => {
@@ -39,7 +38,11 @@ const Navbar = () => {
           <li className="list active">
             <a href="#home">
               <span className="icon">
-                <ion-icon name="home-outline"></ion-icon>
+                {/* <ion-icon name="home-outline"></ion-icon> */}
+                {/* <ion-icon name="home"></ion-icon> */}
+                <ClientOnly>
+                  <ion-icon name="home-outline"></ion-icon>
+                </ClientOnly>
               </span>
               <span className="text">Home</span>
             </a>
@@ -47,7 +50,9 @@ const Navbar = () => {
           <li className="list">
             <a href="#about">
               <span className="icon">
-                <ion-icon name="person-outline"></ion-icon>
+                <ClientOnly>
+                  <ion-icon name="person-outline"></ion-icon>
+                </ClientOnly>
               </span>
               <span className="text">About</span>
             </a>
@@ -55,7 +60,9 @@ const Navbar = () => {
           <li className="list">
             <a href="#resume">
               <span className="icon">
-                <ion-icon name="book-outline"></ion-icon>
+                <ClientOnly>
+                  <ion-icon name="book-outline"></ion-icon>
+                </ClientOnly>
               </span>
               <span className="text">Education</span>
             </a>
@@ -63,7 +70,9 @@ const Navbar = () => {
           <li className="list">
             <a href="#contact">
               <span className="icon">
-                <ion-icon name="call-outline"></ion-icon>
+                <ClientOnly>
+                  <ion-icon name="call-outline"></ion-icon>
+                </ClientOnly>
               </span>
               <span className="text">Contact</span>
             </a>

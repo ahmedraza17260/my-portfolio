@@ -20,32 +20,32 @@
       {
         "name": "facebook",
         "url": "https://www.facebook.com/ahmedraza1726",
-        "className": "fa fa-facebook"
+        "className": "fab fa-facebook"
       },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/ahmedraza17260/",
-        "className": "fa fa-linkedin"
+        "className": "fab fa-linkedin"
       },
       {
         "name": "instagram",
         "url": "https://www.instagram.com/ahmedraza17260/",
-        "className": "fa fa-instagram"
+        "className": "fab fa-instagram"
       },
       {
         "name": "pinterest",
         "url": "https://pinterest.com/ahmedraza17260/",
-        "className": "fa fa-pinterest"
+        "className": "fab fa-pinterest"
       },
       {
         "name": "twitter",
         "url": "https://twitter.com/AhmedRaza17260",
-        "className": "fa fa-twitter"
+        "className": "fab fa-twitter"
       },
       {
         "name": "github",
         "url": "http://github.com/ahmedraza17260",
-        "className": "fa fa-github"
+        "className": "fab fa-github"
       }
     ]
   },

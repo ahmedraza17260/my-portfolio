@@ -1,6 +1,7 @@
 
 /* 1. Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 /* @import "~slick-carousel/slick/slick.css"; */
 /* @import "~slick-carousel/slick/slick-theme.css"; */
@@ -457,3 +458,43 @@ footer ul li a {
   line-height: 1 !important;
   vertical-align: middle !important;
 }
+
+/* 15. Resume Section */
+
+/* .resume-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.resume-label {
+  width: 130px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 2px solid #333;
+  padding-right: 15px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.resume-content {
+  flex: 1;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+.bar-expand {
+  display: inline-block;
+  height: 8px;
+  background-color: #0070f3;
+  border-radius: 4px;
+  margin-right: 10px;
+} */

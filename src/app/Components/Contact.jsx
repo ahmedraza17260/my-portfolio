@@ -9,7 +9,7 @@ const Contact = ({ data }) => {
 
     emailjs
       .sendForm(
-        "gmail", // Replace with your service ID
+        "service_oxzx5mx", // Replace with your service ID
         "PortfolioTemplate", // Replace with your template ID
         e.target,
         "user_LTfJaD1P0OGKt61H6CoDR" // Replace with your public user key

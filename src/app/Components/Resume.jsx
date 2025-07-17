@@ -1,95 +1,85 @@
 "use client";
-
 import React from "react";
 
 const Resume = ({ data }) => {
   if (!data) return null;
 
-  const skillmessage = data.skillmessage;
-
-  const education = data.education.map((edu) => (
-    <div key={edu.school}>
-      <h3>
-        Matriculation:
-        <h4>{edu.school}</h4>
-      </h3>
-      <h3>
-        Intermediate:
-        <h4>{edu.college}</h4>
-      </h3>
-      <p className="info">
-        <h3>
-          University:
-          <h4>{edu.university}</h4>
-        </h3>
-        {edu.degree}
-      </p>
-      <p className="info">{edu.degree1}</p>
-      <p>{edu.description}</p>
-    </div>
-  ));
-
-  const work = data.work
-    .slice()
-    .reverse()
-    .map((job) => (
-      <div key={job.company}>
-        <h3>{job.company}</h3>
-        <p className="info">
-          {job.title} <span>&bull;</span>{" "}
-          <em className="date">{job.years}</em>
-        </p>
-        <dl>
-          <li>{job.description}</li>
-        </dl>
-      </div>
-    ));
-
-  const skills = data.skills.map((skill) => {
-    const className = "bar-expand " + skill.name.toLowerCase();
-    return (
-      <li key={skill.name}>
-        <span style={{ width: skill.level }} className={className}></span>
-        <em>{skill.name}</em>
-      </li>
-    );
-  });
-
   return (
     <section id="resume">
-      <div className="row education">
+      {/* Education Section - FIXED STRUCTURE */}
+      <div className="row ">
         <div className="three columns header-col">
-          <h1>
-            <span>Education</span>
-          </h1>
+          <h1><span></span></h1>
         </div>
-        <div className="nine columns main-col">
-          <div className="row item">
-            <div className="twelve columns">{education}</div>
-          </div>
+        <div style={{ marginBottom: "20px" }} className="nine columns main-col">
+          <h1><span>Education</span></h1>
+
+          {data.education.map((edu) => (
+            <div key={edu.school} className="row item">
+              <div className="twelve columns">
+                <h3>Matriculation:</h3>
+                <h4>{edu.school}</h4>
+                
+                <h3>Intermediate:</h3>
+                <h4>{edu.college}</h4>
+                
+                <h3>University:</h3>
+                <h4>{edu.university}</h4>
+                
+                <p className="info">{edu.degree}</p>
+                <p className="info">{edu.degree1}</p>
+                <p>{edu.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="row work">
+      <br /><br />
+
+      {/* Work Section - OPTIMIZED */}
+      <div className="row ">
         <div className="three columns header-col">
-          <h1>
-            <span>Work</span>
-          </h1>
+          <h1><span></span></h1>
         </div>
-        <div className="nine columns main-col">{work}</div>
+        <div style={{ marginBottom: "20px" }} className="nine columns main-col">
+          <h1><span>Work</span></h1>
+          {data.work.slice().reverse().map((job) => (
+            <div key={`${job.company}-${job.years}`}>
+              <h3>{job.company}</h3>
+              <p className="info">
+                {job.title} <span>&bull;</span>{" "}
+                <em className="date">{job.years}</em>
+              </p>
+              <ul>
+                <li>{job.description}</li>
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="row skill">
+      {/* Skills Section - UNCHANGED */}
+      <div className="row ">
         <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
+          <h1><span></span></h1>
         </div>
-        <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-          <br />
+       
+        <div  style={{ marginBottom: "20px" }} className="nine columns main-col">
+          <h1><span>Skills</span></h1>
+          <p>{data.skillmessage}</p> <br/> <br/>
           <div className="bars">
-            <ul className="skills">{skills}</ul>
+            <ul className="skills">
+              {data.skills.map((skill) => (
+                <li key={skill.name}>
+                  <span 
+                    style={{ width: skill.level }} 
+                    className={`bar-expand ${skill.name.toLowerCase()}`}
+                  ></span>
+                  <em>{skill.name}</em>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

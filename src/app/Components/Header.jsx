@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+
 const Header = ({ data }) => {
   const [mounted, setMounted] = useState(false);
 
